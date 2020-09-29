@@ -1,6 +1,6 @@
 {
   "name": "date-format-helper",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "description": "Date Format Helper",
   "main": "index.js",
   "module": "src/module.js",
