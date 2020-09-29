@@ -1,0 +1,27 @@
+{
+  "name": "date-format-helper",
+  "version": "0.0.1-beta.0",
+  "description": "Date Format Helper",
+  "main": "index.js",
+  "module": "src/module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/module.js --file index.js --format umd --name 'date-format-helper'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cifergit/date-format-helper.git"
+  },
+  "keywords": [
+    "date-format-helper",
+    "date-format",
+    "date-helper",
+    "format-helper"
+  ],
+  "author": "cifer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cifergit/date-format-helper/issues"
+  },
+  "homepage": "https://github.com/cifergit/date-format-helper#readme"
+}
