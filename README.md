@@ -1,10 +1,10 @@
-# format-date-helper
+# date-format-helper
 This is a simple date format component
 
 ## Install
 
 ```
-npm install --save form-data
+npm install --save date-format-helper
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ Html in IE
 | format | String | 'YYYY-MM-DD hh:mm:ss' | YYYY=year<br>MM=month<br>DD=day<br>hh=hours<br>mm=minutes<br> ss=seconds<br>SSS=milliseconds<br><br>you can free combination in any order |
 | unit | String |'ms'| if value is 's' mean number is seconds |
 
-#### Notice: 't,format,unit' are optional. Normally the 'Props' is object, and 't' instead of 'Props' is allowed.
+#### Notice: 't,format,unit' are optional. Normally the 'Props' is object, but 't' instead of 'Props' is allowed.
 
 ## Demo
 ```javascript
@@ -49,8 +49,12 @@ dateFormat(1601373600000 )
 // 2020-09-29 18:00:00
 dateFormat('Tue Sep 29 2020 18:00:00 GMT+0800 (China Standard Time)')
 // 2020-09-29 18:00:00
-dateFormat({t: new Date(), format: 'MM-DD-YYYY hh:mm:ss.SSS'})
-// 09-29-2020 18:00:00.000
+dateFormat({t: new Date(), format: 'YYYY-MM-DD hh:mm:ss.SSS'}) // if now is 1601373600000
+// 2020-09-29 18:00:00.000
+dateFormat({t: '2020-09-29 18:00:00', format: 'hh:mm MM-DD-YYYY'})
+// 18:00 09-29-2020
+dateFormat({t: 1601373600000, format: 'YYYY-MM-DD'})
+// 2020-09-29
 dateFormat({t: 1601373600, unit: 's'})
 // 2020-09-29 18:00:00
 ```
